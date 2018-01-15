@@ -36,7 +36,7 @@ def getGitCommitHash = { ->
         }
         return stdout.toString().trim()
     } catch(ignored) {
-        return null;
+        return null
     }
 }
 
@@ -47,7 +47,7 @@ def getGitDirtyIndex = { ->
             ignoreExitValue = true
         }.exitValue == 1
     } catch(ignored) {
-        return false;
+        return false
     }
 }
 
@@ -58,7 +58,7 @@ def getGitDirtyFiles = { ->
             ignoreExitValue = true
         }.exitValue == 1
     } catch(ignored) {
-        return false;
+        return false
     }
 }
 
@@ -81,10 +81,10 @@ def getGitChangelog = { ->
             }
             return stdout.toString().trim()
         } else {
-            return "";
+            return ""
         }
     } catch(ignored) {
-        return "";
+        return ""
     }
 }
 
